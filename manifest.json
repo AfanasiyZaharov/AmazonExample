@@ -1,0 +1,16 @@
+{
+  "name" : "Amazon",
+  "version" : "0.1",
+  "description" : "example",
+  "permissions": ["tabs", "https://www.amazon.com/*" ],
+
+ "content_scripts": [
+    {
+      "matches": ["https://www.amazon.com/*"],
+      "css": ["bootstrap.min.css"],
+      "js": [ "jquery.js", "bootstrap.min.js", "myscript.js"]
+    }
+  ],
+
+  "manifest_version": 2
+}
